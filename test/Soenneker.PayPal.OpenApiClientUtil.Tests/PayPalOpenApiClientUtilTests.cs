@@ -1,20 +1,19 @@
 using Soenneker.PayPal.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.PayPal.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class PayPalOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class PayPalOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly IPayPalOpenApiClientUtil _openapiclientutil;
 
-    public PayPalOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public PayPalOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<IPayPalOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
