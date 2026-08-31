@@ -41,8 +41,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.PayPal.HttpClients" Version="4.0.92" />
-        <PackageReference Include="Soenneker.PayPal.OpenApiClient" Version="4.0.24" />
-        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.825" />
+        <PackageReference Include="Soenneker.PayPal.HttpClients" Version="4.0.93" />
+        <PackageReference Include="Soenneker.PayPal.OpenApiClient" Version="4.0.26" />
+        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.829" />
     </ItemGroup>
 </Project>
