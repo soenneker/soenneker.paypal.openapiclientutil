@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.PayPal.OpenApiClientUtil;
 
+/// <inheritdoc cref="IPayPalOpenApiClientUtil" />
 public sealed class PayPalOpenApiClientUtil : IPayPalOpenApiClientUtil
 {
     private readonly AsyncSingleton<PayPalOpenApiClient> _client;
