@@ -44,7 +44,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.PayPal.HttpClients" Version="11.0.175" />
+        <PackageReference Include="Soenneker.PayPal.HttpClients" Version="11.0.179" />
         <PackageReference Include="Soenneker.PayPal.OpenApiClient" Version="11.0.65" />
     </ItemGroup>
 </Project>
